@@ -113,38 +113,38 @@ python clientv3.py 192.168.1.10 Bob
 ✅ The GUI window will open for each user.
 
 🧭 Usage Guide
-##🎤 Audio
+🎤 Audio
 Click 🎤 Unmute to enable microphone streaming.
 
 Click again to mute.
 
-##📹 Video
+📹 Video
 Select your camera (if multiple detected).
 
 Click 📹 Start Video to start your webcam.
 
 Click again to stop.
 
-##🖥️ Screen Share
+🖥️ Screen Share
 Click 🖥️ Share Screen to broadcast your desktop.
 
 Other participants will see your live screen.
 
 Click again to stop sharing.
 
-##💬 Chat
+💬 Chat
 Type messages in the Chat panel and hit Enter.
 
 System events (join/leave) appear automatically.
 
-##📁 File Sharing
+📁 File Sharing
 Go to Files tab → 📤 Share File.
 
 Choose any local file to send to all participants.
 
 Others can download it after full transfer.
 
-##🧠 Internal Design Highlights
+🧠 Internal Design Highlights
 Server (server3.py)
 Handles multiple clients concurrently using threading.
 
@@ -170,7 +170,7 @@ Video/audio captured in real-time and compressed before sending.
 
 GUI uses Tkinter’s after() to update UI safely from background threads.
 
-##📡 Message Types (Enum)
+📡 Message Types (Enum)
 Type	Description
 CHAT	Text chat message
 FILE_NOTIFY	New file transfer started
@@ -183,18 +183,18 @@ USER_JOIN / USER_LEAVE	Participant connection updates
 UDP_REGISTER	Client’s UDP registration
 
 
-##🧑‍💻 Example Network Setup
+🧑‍💻 Example Network Setup
 Device	Role	IP Address	Command
 Laptop A	Server	192.168.1.10	python server3.py
 Laptop B	Client	192.168.1.11	python clientv3.py 192.168.1.10 Alice
 Laptop C	Client	192.168.1.12	python clientv3.py 192.168.1.10 Bob
 
 
-##🧑‍🏫 Authors
+🧑‍🏫 Authors
 Srihariram Asuvathraman — CS23B1063
 Vijay Pranav — CS23B1073
 
-## 🌟 Acknowledgments
+🌟 Acknowledgments
 
 **Indian Institute of Information Technology, Design and Manufacturing, Kancheepuram**  
 **Course:** Computer Networks  
